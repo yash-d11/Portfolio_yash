@@ -1,0 +1,15 @@
+/* Add to your main CSS file */
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-marquee {
+    display: flex; /* Ensure items are displayed in a row */
+    animation: marquee 5s linear infinite; /* Adjust speed here */
+    width: calc(200%); /* Ensure width is twice the viewport */
+  }
