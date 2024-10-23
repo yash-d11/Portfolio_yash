@@ -77,7 +77,7 @@ const App = () => {
     
           <div
             ref={dragAreaRef}
-            className="h-[11vh] w-40 bg-blue-500 rounded-full flex items-center justify-center"
+            className="h-[10vh] lg:h-[11vh] w-40 bg-blue-500 rounded-full flex items-center justify-center"
           >
             <p className="text-gray-300">Drop key Here</p>
           </div>

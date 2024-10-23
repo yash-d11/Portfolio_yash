@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope , FaWhatsapp} from 'react-icons/fa';
 
 const DragArea = () => {
+  const [submitted,setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -11,6 +12,12 @@ const DragArea = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault(); 
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    });
+    setSubmitted(true);
     console.log('Form submitted!', formData);
   };
 
@@ -154,7 +161,8 @@ const DragArea = () => {
         type="submit"
         className="w-full py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-md shadow-lg hover:shadow-xl transition-transform"
       >
-        Send Message
+        {!submitted &&("Send Message")}
+        {submitted && ("Message Sent")}
       </motion.button>
     </form>
       </motion.div>

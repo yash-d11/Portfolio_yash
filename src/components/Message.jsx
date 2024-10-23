@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const MessageBox = () => {
   const [isVisible, setIsVisible] = useState(true);
-
+  
   if (!isVisible) return null; // Return null if not visible
 
   return (
