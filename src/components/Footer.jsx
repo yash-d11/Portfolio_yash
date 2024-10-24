@@ -100,7 +100,7 @@ const DragArea = () => {
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.1 }}
-              href="https://linkedin.com"
+              href="https://wa.me/8817779978"
               target="_blank"
               rel="noopener noreferrer"
               className="text-3xl text-gray-300 hover:text-white"
