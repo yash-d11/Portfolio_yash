@@ -23,7 +23,8 @@ const About = () => {
           >
             <img
               src="/profile.jpg"
-              alt="Profile"
+              alt="Profile image | portfolio yash"
+              loading='lazy'
               className="w-full h-full object-cover rounded-full shadow-lg shadow-indigo-500/50"
             />
           </motion.div>

@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "Task Manager",
     description: "A modern task manager that sorts tasks based on their priority.",
-    image: "/task_app.png",
+    image: "/task_app.jpg",
     liveUrl: "https://github.com/yash-d11/task-frontend",
     
   },
@@ -15,7 +15,7 @@ const projects = [
     id: 2,
     title: "Java Cryptography",
     description: "A java swing application that facilitates image and message encryption.",
-    image: "/java_crypto.png",
+    image: "/java_crypto.jpg",
     // liveUrl: "https://example-live.com",
     
   },
@@ -23,14 +23,14 @@ const projects = [
     id: 3,
     title: "Online Tiffin Center",
     description: "A fully functional online tiffin center website.",
-    image: "/tiffin_center.png",
+    image: "/tiffin_center.jpg",
     // githubUrl: "https://github.com/example/project3",
   },
   {
     id: 4,
     title: "ICD Web Clone",
     description: "A simple web clone of ICD website using HTML/CSS & JS.",
-    image: "/icd.png",
+    image: "/icd.jpg",
     liveUrl: "https://yash-d11.github.io/icd_clone/",
     
   },
@@ -38,7 +38,7 @@ const projects = [
     id: 5,
     title: "Landing page",
     description: "An animated landing page made using shery.js and GSAP.",
-    image: "/landing_page.png",
+    image: "/landing_page.jpg",
     liveUrl: "https://yash-d11.github.io/animated-landingpage/",
     
   },

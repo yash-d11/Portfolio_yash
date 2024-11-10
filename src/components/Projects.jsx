@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import "/recipe.png";
+import "/recipe.jpg";
 import AdditionalProjects from './Additionalproject';
 
 const projects = [
@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: "Recipe app",
     description: "Share, discover, and create delicious recipes with our app!",
-    image: "/recipe.png", // Background image for the project card
+    image: "/recipe.jpg", // Background image for the project card
     liveUrl: "https://recipe-app-zeta-gules.vercel.app/",
     githubUrl: "https://github.com/example/project1"
   },
@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     title: "Personal Portfolio",
     description: "A modern portfolio website with sleek animations.",
-    image: "/portfolio.png",
+    image: "/portfolio.jpg",
     liveUrl: "https://example-live.com",
     githubUrl: "https://github.com/example/project2"
   },
@@ -24,7 +24,7 @@ const projects = [
     id: 3,
     title: "Hotel odisej clone",
     description: "A web clone of a famous hotel website made with html/css, js and gsap.",
-    image: "/hotel.png",
+    image: "/hotel.jpg",
     liveUrl: "https://yash-d11.github.io/hotel_odisej_clone/",
     githubUrl: "https://github.com/example/project2"
   },
