@@ -1,9 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, Suspense } from 'react';
 import Home from './components/Home';
-import About from './components/About';
+const About = React.lazy(() => import('./components/About'));
 import SideNav from './components/Nav';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
+const Skills = React.lazy(() => import('./components/Skills'));
+const Projects = React.lazy(() => import('./components/Projects'));
 import SocialIcons from './components/Socialicon';
 import DragArea from './components/Footer';
 import MessageBox from './components/Message';
@@ -45,9 +45,16 @@ const App = () => {
       {/* Other sections of the page */}
       <Home />
       <SideNav />
-      <About />
-      <Skills />
-      <Projects />
+      <Suspense fallback={<div>Loading About...</div>}>
+        <About />
+      </Suspense>
+      <Suspense fallback={<div>Loading Skills...</div>}>
+        <Skills />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Projects...</div>}>
+        <Projects />
+      </Suspense>
 
       {/* SocialIcons component */}
       {!showExpandedMessage && (
